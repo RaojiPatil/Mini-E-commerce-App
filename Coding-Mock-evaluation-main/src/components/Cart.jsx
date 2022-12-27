@@ -1,6 +1,6 @@
 import React from 'react'
 
- const LogIn = () => {
+ const Cart = () => {
   return (
       <>
      <h2>LogIn</h2>
@@ -8,4 +8,4 @@ import React from 'react'
   )
 
 }
-export default LogIn
+export default Cart

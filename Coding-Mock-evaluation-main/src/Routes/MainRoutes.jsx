@@ -2,10 +2,11 @@ import ReactDOM from "react-dom";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "../components/Home";
+import Productdetails from "../components/Product-details";
 import Product from "../components/Product";
-import LogIn from "../components/LogIn";
+import Cart from "../components/Cart";
 import { Navbar } from "../components/Navbar";
+import Orders from "../components/Orders";
 
 export const MainRoutes = ()=>{
     return(
@@ -13,9 +14,10 @@ export const MainRoutes = ()=>{
           <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route index element={<Home />} />
-          <Route path="Product" element={<Product />} />
-          <Route path="LogIn" element={<LogIn />} />
+        <Route index element={<Product />} />
+          <Route path="Product-details" element={<Productdetails />} />
+          <Route path="Cart" element={<Cart />} />
+          <Route path="Orders" element={<Orders />} />
         </Route>
       </Routes>
     </BrowserRouter>
