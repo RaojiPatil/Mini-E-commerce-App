@@ -1,1 +1,0 @@
-# Mini-E-commerce-App
